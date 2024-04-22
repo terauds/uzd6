@@ -1,0 +1,175 @@
+
+#menu {
+    
+  background-color: blue;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 30px;
+  width: 25%; /* Centrēt uz ekrāna ar 80% platumu */
+  margin: auto; /* Novietot centrā */
+  border-radius: 5px; /* Iztapa malas */
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+li a {
+    float: left;
+    width: 75px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.5s;
+    padding: 5px;
+    display: block;
+}
+
+li a:hover {
+    background-color: white;
+    color: blue;
+    transform: scaleY(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#par-manu-hobiju {
+  background-image: url(leciens.gif);
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+#regbijs{
+  background-image: url(nopietns.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#skauti{
+  background-image: url(backflip.gif);
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+
+
+#leciens gif,
+#nopietns img,
+#backflip gif
+
+#leciens gif{
+  transform: translateZ(-1px) scale(1.5);
+  z-index: -1;
+}
+
+#nopietns img {
+  transform: translateZ(-3px) scale(1.5);
+  z-index: -1;
+}
+
+#backflip  gif {
+  transform: translateZ(-3px) scale(1.5);
+  z-index: -1;
+}
+
+
+
+body {
+background-color: white;
+margin: 0;
+}
+
+.parallax-container{
+height: auto;
+overflow-y: hidden;
+overflow-x: hidden;
+perspective: 1px;
+z-index:  -1;
+margin-bottom: 0;
+}
+
+.content{
+text-align: center;
+font-size: 5rem;
+color: rgb(201, 15, 15);
+text-shadow: 10px black;
+z-index: 1;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section img {
+  width: 100%;
+  max-width: 100px; /* Lai novērstu izstiepšanos */
+  object-fit: cover;
+  transform: translateZ(-1px) scale(1.5);
+  z-index: -1;
+  position: fixed ;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.section h1 {
+  font-size: 3rem; /* Izmaiņas virsraksta fonta lielumā */
+  text-align: center;
+  color: white; /* Ja nepieciešams, mainiet teksta krāsu */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Pievieno ēnu teksta labākai redzamībai */
+}
+
+.section p {
+  font-size: 2.5rem; /* Lielāks fonta lielums */
+  text-align: center;
+  color: white; /* Ja nepieciešams, mainiet teksta krāsu */
+  text-shadow: 5px 5px 5px  black;
+  
+}
+
+#autors {
+background-color:blue;
+color: white;
+padding: 10px;
+max-height: 5px; 
+width: 100%;
+overflow: hidden;
+transition: max-height 3s ease-in-out;
+text-align: center;
+z-index: 1;
+position: absolute;
+bottom: 0px;
+}
+
+#autors:hover {
+max-height: 200px; 
+}
+
+
+footer {
+  margin-top: 0; /* Noņem atstarpi augšā */
+}
+
+
+
